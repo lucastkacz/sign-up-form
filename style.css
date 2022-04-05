@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
+
+:root {
+	--left-width: 35vw;
+	--right-width: calc(100vw - var(--left-width));
+	--height: 100vh;
+	--lateral-margin: 0vw;
+    font-family: "Playfair Display SC", serif;
+}
+
+body {
+	display: flex;
+	margin: 0 var(--lateral-margin) 0;
+	padding: 0;
+	border: 0;
+	background-color: white;
+}
+
+.left-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #15304b;
+	height: var(--height);
+}
+
+.logo {
+	color: white;
+	text-decoration: underline;
+	font-size: 5vw;
+	margin-top: 10vh;
+	text-align: center;
+}
+
+.zeus-image {
+	width: var(--left-width);
+	height: auto;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	background-color: bisque;
+	width: var(--right-width);
+	height: var(--height);
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.introduction {
+    font-size: 1vw;
+}
+
+.form {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+}
